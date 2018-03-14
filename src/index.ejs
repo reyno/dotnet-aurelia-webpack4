@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aurelia and Webpack 4</title>
+</head>
+
+<body aurelia-app="index">
+    <% if (htmlWebpackPlugin.options.metadata.mode !== 'production') { %>
+        <!-- Webpack Dev Server reload -->
+        <script src="/webpack-dev-server.js"></script>
+    <% } %>
+</body>
+
+</html>
